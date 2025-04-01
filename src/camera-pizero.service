@@ -1,0 +1,13 @@
+[Unit]
+Description=Camera Autostart on Boot
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/local/bin/camera-pizero.py
+WorkingDirectory=/DCIM
+Restart=always
+StandardOutput=inherit
+StandardError=inherit
+
+[Install]
+WantedBy=multi-user.target
