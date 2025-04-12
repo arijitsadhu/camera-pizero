@@ -7,8 +7,6 @@ I wanted to make an IR camera for landscape photos.
 
 It uses the Raspberry Pi Camera Module 3 NOIR which has autofocus, a Raspberry Pi Zero 2W for the size and ok performance, a generic 3.5in LCD SPI screen from Elecrow I had around, trigger push button hole, on-off switch mount for saving battery power and normal AA instead of one of a kind USB charge-banks and uses printable battery holder to make the project easily reproducible. Note that any Raspberry Pi zero can be used instead or any Raspberry Pi Camera module from 1 to 3.
 
-Using the Raspberry Pi OS Lite (64bit) bookworm 2024-11-29 and the code has a hack for an existing bug that will be patched in the future so  will require a code change for future releases.
-
 The camera also has a hole for tripod mount where a nut can be glued if needed, has holes for straps (peak design compatible) and cold shoe accessory mount for viewfinders and other accessories. Do not use a flash as the metal contacts can scratch the print.
 
 TODO: Mount for cokin filters.
@@ -54,6 +52,8 @@ Note: During the software installation better use a usb power supply.
 
 
 ## Software
+Using the Raspberry Pi OS Lite (64bit) bookworm 2024-11-29 and the code has a hack for an existing bug that will be patched in the future so  will require a code change for future releases.
+
 Prequesistes
 * Raspberry Pi OS Lite bookworm
 

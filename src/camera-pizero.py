@@ -4,6 +4,7 @@ from gpiozero import Button
 from libcamera import Transform
 from picamera2 import Picamera2, Preview, MappedArray
 from glob import glob
+from os import sync
 import cv2
 
 button = Button(13)
@@ -31,6 +32,7 @@ def main():
     while True:
         button.wait_for_press()
         picam2.switch_mode_and_capture_file(capture_config, "%04d.jpg" % frame)
+        sync()
         print("saved %04d.jpg" % frame)
         frame += 1
 
